@@ -72,10 +72,10 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 1. Retrieve the names of all tracks that have more than 1 billion streams.
 
 ```SELECT * FROM spotify
-WHERE stream > 1000000000;```
+WHERE stream > 1000000000;
 
 2. List all albums along with their respective artists.
-SELECT
+```SELECT
 	DISTINCT album,artist
 FROM spotify
 ORDER BY 1;
