@@ -73,6 +73,7 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 
 ```SELECT * FROM spotify
 WHERE stream > 1000000000;
+```
 
 2. List all albums along with their respective artists.
 ```SELECT
@@ -84,14 +85,14 @@ SELECT
 	DISTINCT album
 FROM spotify
 ORDER BY 1;
-
+```
 3. Get the total number of comments for tracks where `licensed = TRUE`.
-
+```
 SELECT 
 SUM(comments) AS total_comments
 FROM spotify
 WHERE licensed = 'true';
-
+```
 4. Find all tracks that belong to the album type `single`.
 
 SELECT * FROM spotify
